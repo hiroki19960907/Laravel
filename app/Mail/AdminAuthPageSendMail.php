@@ -18,7 +18,7 @@ class AdminAuthPageSendMail extends Mailable {
 
     public function build() {
         return $this
-            ->subject('~さんかからメールが届きました')
+            ->subject('~さんからメールが届きました')
             ->view('mail.adminauthpageview')
             ->with([
                 'urls' => $this->urls,
